@@ -20,9 +20,9 @@ class CreateFeesTable extends Migration
             $table->double('amount');
             $table->timestamps();
         });
-        Schema::table('fees', function(Blueprint $table) {
-            $table->foreign('student_number')->references('student_number')->on('students');
-        });
+//        Schema::table('fees', function(Blueprint $table) {
+//            $table->foreign('student_number')->references('student_number')->on('students');
+//        });
     }
 
     /**
